@@ -22,7 +22,6 @@ def preusmeri_na_opcijo(opcija):
         bottle.redirect('/mnozenje')
 
 
-
 @bottle.get('/')
 def zacetna_stran():
     opcija = uporabnik.trenutna_operacija
@@ -33,13 +32,13 @@ def zacetna_stran():
     elif opcija is 3:
         ime_shranjene_opcije = 'Množenje'
     return bottle.template('index.html', ime_shranjene_opcije=ime_shranjene_opcije,
-                                        pravilno_odgovorjeni=uporabnik.pravilno_odgovorjeni,
-                                        stevilo_poskusov=uporabnik.stevilo_poskusov)
+                           pravilno_odgovorjeni=uporabnik.pravilno_odgovorjeni,
+                           stevilo_poskusov=uporabnik.stevilo_poskusov)
+
 
 @bottle.get('/statistika')
 def zacetna_stran():
     return bottle.template('statistika.html', dnevna_statistika=uporabnik.dnevna_statistika)
-
 
 
 @bottle.get('/preusmeri_na_shranjeno_opcijo')
