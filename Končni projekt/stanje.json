@@ -1,15 +1,15 @@
 {
-    "trenutna_operacija": 1,
-    "pravilno_odgovorjeni": 20,
-    "stevilo_poskusov": 42,
+    "trenutna_operacija": 2,
+    "pravilno_odgovorjeni": 21,
+    "stevilo_poskusov": 44,
     "dnevna_statistika": {
         "02_09_2020": {
             "pravilno_odgovorjeni": 2,
             "stevilo_poskusov": 3
         },
         "03_09_2020": {
-            "pravilno_odgovorjeni": 4,
-            "stevilo_poskusov": 18
+            "pravilno_odgovorjeni": 5,
+            "stevilo_poskusov": 20
         }
     }
 }
