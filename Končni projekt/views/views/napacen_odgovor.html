@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Več sreče prihodnjič!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sredinski-container">
+        <div class="orodna-vrstica">
+            <h1 class="naslov-programa text-primary">
+                Utrjujemo
+            </h1>
+            <a href="/" class="gumb-nazaj text-secondary">Nazaj domov <</a>
+        </div>
+        <div class="okno">
+            <h2>Tvoj odgovor je <span class="text-danger">napačen.</span></h2>
+            <a class="btn btn-primary" href="/preusmeri_na_shranjeno_opcijo">Reši nov račun!</a>
+            <a class="btn btn-secondary" href="/">Izberi novo operacijo za utrjevanje</a>
+        </div>
+    </div>
+
+        <style>
+            body {
+                font-family: 'Alata', sans-serif;
+            }
+            .sredinski-container {
+                max-width: 60%;
+                margin: 20px auto 0;
+            }
+            .naslov-programa {
+                font-size: 16px;
+            }
+            .okno {
+                text-align: center;
+                padding: 20px;
+                border: 2px solid black;
+                box-shadow: -15px 15px 0px 0px rgba(0,0,0,0.75);
+            }
+            .gumb-nazaj, .naslov-programa {
+                display: inline-block;
+            }
+            .gumb-nazaj {
+                float: right;
+            }
+    </style>
+</body>
+</html>

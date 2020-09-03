@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utrjujemo s Kristino</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sredinski-container">
+        <h1 class="naslov-programa text-primary">
+            Utrjujemo
+        </h1>
+        <div class="okno">
+            <h2>Izberi operacijo za utrjevanje</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group" role="group">
+                        <a href="/sestevanje" class="btn btn-secondary">Seštevanje</a>
+                        <a href="/odstevanje" class="btn btn-secondary">Odštevanje</a></button>
+                        <a href="/mnozenje" class="btn btn-secondary">Množenje</a></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <p>
+                        Ali pa...
+                        <a class="btn btn-primary" href="/preusmeri_na_shranjeno_opcijo">
+                            nadaljuj utrjevanje operacije: {{ ime_shranjene_opcije }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <h1>Statistika:</h1>
+            <div class="statistika">
+                <div>
+                    <span>Število vseh poskusov:</span>
+                    <b>{{ stevilo_poskusov }}</b>
+                </div>
+                <div>
+                    <span>Število pravilnih odgovorov:</span>
+                    <b>{{ pravilno_odgovorjeni }}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Alata', sans-serif;
+        }
+        .sredinski-container {
+            max-width: 60%;
+            margin: 20px auto 0;
+        }
+        .naslov-programa {
+            font-size: 16px;
+        }
+        .okno {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+            box-shadow: -15px 15px 0px 0px rgba(0,0,0,0.75);
+        }
+        .statistika {
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</body>
+
+</html>

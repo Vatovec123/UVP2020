@@ -4,6 +4,12 @@ import os
 import random
 from model import Uporabnik
 
+# vkljucimo knjiznico, ki generira datume
+from datetime import date
+danasnji_datum = date.today()
+danasnji_datum = danasnji_datum.strftime("%d_%m_%Y")
+
+
 uporabnik = Uporabnik()
 
 
